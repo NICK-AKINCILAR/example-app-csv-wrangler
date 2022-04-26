@@ -72,7 +72,7 @@ with c30:
     )
 
     if uploaded_file is not None:
-        file_container = st.expander("Check your uploaded .csv")
+        file_container = st.expander("Check your uploaded .xls")
         #shows = pd.read_csv(uploaded_file)
         shows = pd.read_excel(uploaded_file)
         uploaded_file.seek(0)
@@ -81,7 +81,7 @@ with c30:
     else:
         st.info(
             f"""
-                👆 Upload a .csv file first. Sample to try: [biostats.csv](https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv)
+                👆 Upload a .excel file first. Sample to try: [biostats.csv](https://people.sc.fsu.edu/~jburkardt/data/csv/biostats.csv)
                 """
         )
 
